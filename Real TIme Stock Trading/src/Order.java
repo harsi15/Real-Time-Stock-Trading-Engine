@@ -5,11 +5,13 @@ public class Order {
     int stockPrice;
     char[] stockTickerSymbol;
     char[] stockOrderType;
+    Order next;
 
     public Order(char[] stockOrderType, char[] stockTickerSymbol, int stockQuantity, int stockPrice){
         this.stockOrderType = stockOrderType;
         this.stockTickerSymbol = stockTickerSymbol;
         this.stockQuantity = stockQuantity;
         this.stockPrice = stockPrice;
+        this.next = null;
     }
 }
