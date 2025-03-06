@@ -5,7 +5,7 @@ public class Order {
     int stockPrice;
     String stockTickerSymbol;
     String stockOrderType;
-    Order next;
+    volatile Order next;
 
     public Order(String stockOrderType, String stockTickerSymbol, int stockQuantity, int stockPrice){
         this.stockOrderType = stockOrderType;

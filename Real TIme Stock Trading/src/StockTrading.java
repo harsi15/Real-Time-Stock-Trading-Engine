@@ -35,7 +35,7 @@ public class StockTrading {
             String stockOrderType = (i % 2 == 0) ? "BUY" : "SELL";
             String stockTickerSymbol = stockTickers[i % stockTickers.length];
             int stockQuantity = (i % 100) + 1;
-            int stockPrice = (i % 500) + 100;
+            int stockPrice = (i % 300) + 100;
 
             stockOrderBooking.addOrder(stockOrderType, stockTickerSymbol, stockQuantity, stockPrice);
         }
