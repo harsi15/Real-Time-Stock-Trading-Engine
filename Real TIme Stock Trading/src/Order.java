@@ -3,15 +3,17 @@ public class Order {
 
     int stockQuantity;
     int stockPrice;
-    char[] stockTickerSymbol;
-    char[] stockOrderType;
+    String stockTickerSymbol;
+    String stockOrderType;
     Order next;
 
-    public Order(char[] stockOrderType, char[] stockTickerSymbol, int stockQuantity, int stockPrice){
+    public Order(String stockOrderType, String stockTickerSymbol, int stockQuantity, int stockPrice){
         this.stockOrderType = stockOrderType;
         this.stockTickerSymbol = stockTickerSymbol;
         this.stockQuantity = stockQuantity;
         this.stockPrice = stockPrice;
         this.next = null;
+        System.out.println("New order added: " + stockOrderType + " " + stockQuantity + " shares of " + stockTickerSymbol + " at " + stockPrice);
+
     }
 }
