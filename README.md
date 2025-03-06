@@ -17,5 +17,5 @@ Java
 
 ## How to run:
 
-javac *.java
+javac *.java<br>
 java StockTrading.java
